@@ -34,13 +34,16 @@ def arrange():
     elif Value_3 > Value_1 and Value_3 > Value_2 and Value_3 > Value_4:
         if Value_1 > Value_2 and Value_2 > Value_4:
             print (f"The order of the number is {Value_3}, {Value_1}, {Value_2}, {Value_4}.")
-        elif Value_1 > Value_2 and Value_2 < Value_4:
+        elif Value_1 > Value_2 and Value_1 > Value_4:
             print (f"The order of the number is {Value_3}, {Value_1}, {Value_4}, {Value_2}.")
         elif Value_1 < Value_2 and Value_1 > Value_4:
             print (f"The order of the number is {Value_3}, {Value_2}, {Value_1}, {Value_4}.")
-        elif Value_1 < Value_2 and Value_1 < Value_4:
+        elif Value_1 < Value_2 and Value_2 > Value_4:
             print (f"The order of the number is {Value_3}, {Value_2}, {Value_4}, {Value_1}.")
-        elif Value_1 < Value_2 and Value_2 < Value_4:
+        elif Value_1 > Value_2 and Value_1 < Value_4:
             print (f"The order of the number is {Value_3}, {Value_4}, {Value_1}, {Value_2}.")
+        else:
+            Value_1 < Value_2 and Value_2 < Value_4
+            print (f"The order of the number is {Value_3}, {Value_4}, {Value_2}, {Value_1}.")
 
 arrange()
